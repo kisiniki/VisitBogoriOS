@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bJq-GW-CSt">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bJq-GW-CSt">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
@@ -63,6 +63,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QRk-8P-oew" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4b9-95-5Ap">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -78,7 +79,7 @@
         <!--Profile-->
         <scene sceneID="VD3-mw-2bw">
             <objects>
-                <viewController id="Gmp-mG-ibu" customClass="ViewController" customModule="VisitBogor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Gmp-mG-ibu" customClass="roundPhotoViewController" customModule="VisitBogor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s8V-03-g2J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +122,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="man" selectedImage="man" id="nOP-fN-Ybj"/>
                     <connections>
-                        <outlet property="profileImage" destination="48J-YX-vDA" id="dpC-hu-Dk7"/>
+                        <outlet property="profilePhoto" destination="48J-YX-vDA" id="ZnO-uX-mT4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W3P-q8-Pfh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

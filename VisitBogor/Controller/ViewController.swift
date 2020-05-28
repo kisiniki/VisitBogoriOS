@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var placeTableView: UITableView!
     
     override func viewDidLoad() {
@@ -18,7 +17,8 @@ class ViewController: UIViewController {
         self.navigationItem.title = "Tour to Bogor!"
         placeTableView.dataSource = self
         placeTableView.delegate = self
-        placeTableView.register(UINib(nibName: "PlaceTableViewCell", bundle: nil), forCellReuseIdentifier: "PlaceCell")
+        placeTableView.register(UINib(nibName: "PlaceTableViewCell", bundle: nil), forCellReuseIdentifier:
+            "PlaceCell")
     }
 }
 
@@ -34,6 +34,13 @@ extension ViewController: UITableViewDataSource {
         cell.photoPlace.image = place.photo
         return cell
     }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete{
+            places.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+        }
+    }
+    
 }
 
 extension ViewController:UITableViewDelegate{

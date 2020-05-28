@@ -22,6 +22,9 @@ class DetailViewController: UIViewController {
             photoPlace.image = result.photo
             namePlace.text = result.name
             descPlace.text = result.desc
+            
+            photoPlace.layer.shadowOpacity = 0.25
+            photoPlace.layer.shadowRadius = 5
         }
     }
 

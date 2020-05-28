@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45444F8C24747B66009C6428 /* roundPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45444F8B24747B66009C6428 /* roundPhotoViewController.swift */; };
 		458D2646247075D5004293D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458D2645247075D5004293D4 /* AppDelegate.swift */; };
 		458D2648247075D5004293D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458D2647247075D5004293D4 /* SceneDelegate.swift */; };
 		458D264A247075D5004293D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458D2649247075D5004293D4 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45444F8B24747B66009C6428 /* roundPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundPhotoViewController.swift; sourceTree = "<group>"; };
 		458D2642247075D5004293D4 /* VisitBogor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisitBogor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		458D2645247075D5004293D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		458D2647247075D5004293D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				458D2649247075D5004293D4 /* ViewController.swift */,
 				458D265924707BAB004293D4 /* PlaceTableViewCell.swift */,
 				459B6EFA24720D50009D5CFC /* DetailViewController.swift */,
+				45444F8B24747B66009C6428 /* roundPhotoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				458D264A247075D5004293D4 /* ViewController.swift in Sources */,
 				458D266224709D49004293D4 /* PlaceAttribute.swift in Sources */,
+				45444F8C24747B66009C6428 /* roundPhotoViewController.swift in Sources */,
 				458D266424709D66004293D4 /* PlaceDataSource.swift in Sources */,
 				458D2646247075D5004293D4 /* AppDelegate.swift in Sources */,
 				458D2648247075D5004293D4 /* SceneDelegate.swift in Sources */,
